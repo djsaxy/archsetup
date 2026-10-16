@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Install DWM
 cd ~/.config/suckless/dwm
