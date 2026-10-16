@@ -6,7 +6,7 @@
 sudo pacman -Syu
 
 # Install pacman packages
-sudo pacman -S --needed git base-devel xorg xorg-xinit xorg-xrandr xorg-xset ranger vim nautilus fastfetch bluez blueman ttf-jetbrains-mono htop tailscale syncthing --noconfirm
+sudo pacman -S --needed git base-devel xorg xorg-xinit xorg-xrandr xorg-xset ranger vim nautilus fastfetch bluez blueman ttf-jetbrains-mono htop librewolf tailscale syncthing --noconfirm
 # sudo pacman -S --needed stow github-cli remmina freerdp
 
 Install yay
@@ -21,7 +21,8 @@ yay -S helium-browser-bin arch-update --noconfirm
 
 # Make scripts executable
 chmod +x ./archsetup/initialgithubclone.sh
-chmod +x ./archsetup/dwm.sh
+# chmod +x ./archsetup/dwm.sh
+# chmod +x /archsetup.bspwm.sh
 # chmod +x ./archsetup/xinitrc.sh
 # chmod +x ./archsetup/touchpad.sh
 # chmod +x ./archsetup/tailscale.sh
@@ -35,11 +36,12 @@ chmod +x ./archsetup/dwm.sh
 # Setup Syncthing
 # ./archsetup/syncthing.sh
 
-# Install DWM
-./archsetup/dwm.sh
+# Install Window Manager
+# ./archsetup/dwm.sh
+./archsetup/bspwm.sh
 
 # Write .xintirc file
-# ./archsetup/xinitrc.sh
+./archsetup/xinitrc.sh
 
 # Turn on Tapping on Touchpad
 # ./archsetup/touchpad.sh
