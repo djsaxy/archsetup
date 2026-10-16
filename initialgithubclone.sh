@@ -1,11 +1,6 @@
 #!/bin/sh
 
+# Used to be much more complicated (stow, token, etc.) Consider just moving into archsetup.sh
 # Pull dotfiles from Github
-# gh auth login --with-token < githubtoken.txt
-mkdir ~/.dots
-git clone https://github.com/djsaxy/dots.git ~/.dots
-mv ~/.dots/.config ~/.config
-# cd ~/.dots
-# git init
-# stow . --adopt
-# cd ~
+git clone https://github.com/djsaxy/dots ~/
+mv ~/dots/.config ~/
