@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Set up arch for use with my dotfiles to run DWM
 
